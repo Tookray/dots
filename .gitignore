@@ -1,0 +1,11 @@
+# whitelist instead of blacklist
+*
+!*/
+
+# track this file
+!.gitignore
+
+# whitelist everything in nvim except packer
+!nvim/
+!nvim/*
+nvim/plugin/packer_compiled.lua
