@@ -8,4 +8,6 @@
 # whitelist everything in nvim except packer
 !nvim/
 !nvim/*
+!nvim/lua/*
+!nvim/lua/config/*
 nvim/plugin/packer_compiled.lua
