@@ -10,7 +10,9 @@ require'packer'.startup(function()
     end
   }
 
-  -- Autocompletion
+  -- Autocompletion and snippets
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
   use 'hrsh7th/cmp-nvim-lsp'
   use {
     'hrsh7th/nvim-cmp',
@@ -18,6 +20,8 @@ require'packer'.startup(function()
       require'config.cmp'
     end
   }
+
+  -- Snippets
 
   -- Syntax highlighting
   use {
