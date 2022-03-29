@@ -10,6 +10,15 @@ require'packer'.startup(function()
     end
   }
 
+  -- Autocompletion
+  use 'hrsh7th/cmp-nvim-lsp'
+  use {
+    'hrsh7th/nvim-cmp',
+    config = function()
+      require'config.cmp'
+    end
+  }
+
   -- Syntax highlighting
   use {
     'nvim-treesitter/nvim-treesitter',
